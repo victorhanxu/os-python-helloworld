@@ -2,8 +2,8 @@ from flask import Flask
 application = Flask(__name__)
 
 @application.route("/")
-def hello():
-    return "Hello! This is an Openshift Python App!"
+def root():
+    return "Hello! This is an Openshift Python App! path: root"
 
 @application.route("/hello")
 def hello():
